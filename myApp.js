@@ -2,6 +2,9 @@ var express = require('express');
 var app = express();
 
 
+app.get('/', (req, res) => {
+    res.send('Hello Express');
+})
 
 
 
@@ -35,5 +38,4 @@ var app = express();
 
 
 
-
- module.exports = app;
+module.exports = app;
