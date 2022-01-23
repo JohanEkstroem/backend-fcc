@@ -12,9 +12,9 @@ app.get('/', (req, res) => {
 });
 
 
-app.use(stylePath, express.static(
+/* app.use(stylePath, express.static(
     
-))
+)) */
 
 
 
