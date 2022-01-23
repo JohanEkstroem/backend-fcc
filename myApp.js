@@ -7,8 +7,10 @@ let stylePath = __dirname + '/public/style.css';
 
 //sending files
 app.get('/', (req, res) => {
-    res.sendFile(absolutPath);
+    res.send('Hello Express');
+    /*     res.sendFile(absolutPath); */
 });
+
 
 app.use(stylePath, express.static(
     
@@ -19,7 +21,7 @@ app.use(stylePath, express.static(
 console.log('Hello World');
 
 
-
+app.listen(port);
 
 
 
